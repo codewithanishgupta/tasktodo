@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Tasks</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main">
+            <h1>Tasks To Do</h1>
+            <div id="inputbax">
+                <input type="text" id="inputtask"   placeholder="Add Task......">
+                <button onclick="add() ">ADD</button>
+            </div>
+            <ul id="list"></ul>
+        </div>
+        <script>
+            inputtask = document.getElementById('inputtask');
+            list=document.getElementById('list');
+
+            function add(){
+                if(inputtask.value !=""){
+                    let li = document.createElement('li');
+                    li.innerHTML = inputtask.value + "<button onclick=remove(this)>X</button>";
+                    list.appendChild(li);
+                    inputtask.value= "";
+                }
+            }
+            function remove(elem){
+                elem.parentElement.remove();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: crimson;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+#main{
+    background-color: bisque;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+#main h1{
+    margin: 20px;
+}
+
+#inputbax *{
+    padding: 10px;
+    font-size: 15px
+}
+#inputbox input {
+    width: 250px;
+}
+
+#inputbox button {
+    background-color: peru;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 10px 5px;
+    text-align: left;
+    background-color: rgb(246, 190, 135);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+ul li button {
+    background-color: rgb(246, 190, 135);
+    border: none;
+}
